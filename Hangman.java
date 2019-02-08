@@ -2,7 +2,6 @@ import java.util.*;
 import java.util.Scanner;
 
 public class Hangman {
-    
     private String secretWord;
     private String correctLetters;
     private String incorrectLetters;
@@ -153,7 +152,7 @@ public class Hangman {
           } else if (badGuesses >= 4) {
               System.out.println(" | \\|/");
           }
-    }
+      }
       if (badGuesses > 4) {
           poleLines = 3;
           if (badGuesses == 5) {
@@ -173,7 +172,12 @@ public class Hangman {
       System.out.println();
     }
     
-}  
+    public static void main (String args[])
+    {
+        Hangman hangman = new Hangman();
+        hangman.playGame();
+    }
+}
 
 
     
